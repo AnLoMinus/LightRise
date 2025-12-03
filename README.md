@@ -1,5 +1,7 @@
 # ✨ חנוכה – אור מתעורר | **LightRise (LR)** ✨
 
+<img width="1024" height="1024" alt="Menorah of Stars and Energy" src="https://github.com/user-attachments/assets/94658b2b-5fe0-40d4-858f-2b7632d247fb" />
+
 📅 **כ״ד כסלו תשפ״ו | 03.12.2025**
 ⏰ **19:00**
 🖋️ קרדיטים: AnLoMinus Creative Vault | SparKing Studio | Leon Yaakobov

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>LightRise – Hanukkah SparKing Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LightRise – אלבום חנוכה רשמי בסגנון SparKing: Afro–Electro–Trap, Holy Energy, Cosmic Hip-Hop, שמונה נרות, שמונה טראקים." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LightRise – Hanukkah SparKing Edition" />
+  <meta property="og:description" content="אלבום חנוכה קוסמי – 8 נרות, 8 טראקים, Holy Trap & Cosmic Light." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anlominus.github.io/LightRise/" />
+
+  <style>
+    :root {
+      --bg-main: #050718;
+      --bg-card: rgba(10, 12, 35, 0.9);
+      --accent-gold: #f6d365;
+      --accent-blue: #4facfe;
+      --accent-purple: #b388ff;
+      --accent-red: #ff5f6d;
+      --text-main: #f9f9ff;
+      --text-soft: #c7c9ff;
+      --border-glow: rgba(255, 255, 255, 0.15);
+      --shadow-strong: 0 0 30px rgba(0, 0, 0, 0.7);
+      --radius-xl: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1b2b4f 0, #050718 55%, #02030a 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .top-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .chip {
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(79, 172, 254, 0.18), rgba(246, 211, 101, 0.12));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .brand-mark {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      border-radius: 26px;
+      overflow: hidden;
+      padding: 2.5rem 2rem 2.25rem;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(79, 172, 254, 0.35), transparent 60%),
+        radial-gradient(circle at 90% 10%, rgba(246, 211, 101, 0.3), transparent 55%),
+        radial-gradient(circle at 50% 100%, rgba(179, 136, 255, 0.4), transparent 60%),
+        linear-gradient(135deg, #050716, #050716);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 860px) {
+      .hero {
+        grid-template-columns: 3fr 2.3fr;
+        align-items: center;
+      }
+    }
+
+    .hero-main-title {
+      font-size: clamp(2.1rem, 4vw, 2.6rem);
+      line-height: 1.18;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-main-title span {
+      background: linear-gradient(120deg, var(--accent-gold), var(--accent-red), var(--accent-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--text-soft);
+      max-width: 580px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.4rem;
+      font-size: 0.82rem;
+    }
+
+    .tag-pill {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(5, 8, 35, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      border-radius: 999px;
+      padding: 0.7rem 1.4rem;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: radial-gradient(circle at 0 0, #f6d365, #ff5f6d);
+      color: #140b1f;
+      font-weight: 700;
+      box-shadow: 0 0 25px rgba(255, 162, 100, 0.65);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 30px rgba(255, 162, 100, 0.9);
+    }
+
+    .btn-ghost {
+      background: rgba(4, 7, 30, 0.75);
+      color: var(--text-main);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(20, 28, 70, 0.85);
+      transform: translateY(-1px);
+    }
+
+    .hero-mini {
+      font-size: 0.82rem;
+      color: var(--text-soft);
+      opacity: 0.9;
+    }
+
+    /* Hero Right – Album Card */
+    .album-card {
+      border-radius: 22px;
+      padding: 1.3rem 1.2rem;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(79, 172, 254, 0.4), transparent 65%),
+        radial-gradient(circle at 80% 100%, rgba(179, 136, 255, 0.3), transparent 60%),
+        rgba(6, 9, 35, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .album-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.82;
+    }
+
+    .album-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .album-sub {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .track-grid-mini {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      font-size: 0.78rem;
+    }
+
+    .track-pill {
+      padding: 0.35rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      background: rgba(5, 7, 25, 0.8);
+      backdrop-filter: blur(7px);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .album-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    /* Sections */
+    section {
+      margin-top: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .section-title span.icon {
+      font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.96rem;
+      color: var(--text-soft);
+      margin-bottom: 1.3rem;
+    }
+
+    /* Track Cards */
+    .tracks-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 760px) {
+      .tracks-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .track-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      padding: 1rem 1rem 0.9rem;
+      border: 1px solid var(--border-glow);
+      box-shadow: var(--shadow-strong);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .track-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0 0, rgba(246, 211, 101, 0.08), transparent 55%),
+                  radial-gradient(circle at 100% 100%, rgba(79, 172, 254, 0.12), transparent 55%);
+      pointer-events: none;
+    }
+
+    .track-index {
+      font-size: 0.78rem;
+      opacity: 0.7;
+      margin-bottom: 0.1rem;
+    }
+
+    .track-name {
+      font-size: 1.02rem;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+
+    .track-tagline {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      margin-bottom: 0.5rem;
+    }
+
+    .track-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-bottom: 0.6rem;
+    }
+
+    .badge {
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(3, 5, 20, 0.8);
+    }
+
+    .track-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .track-link {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px dashed rgba(255, 255, 255, 0.4);
+      background: rgba(4, 7, 28, 0.9);
+      cursor: pointer;
+    }
+
+    /* 8 Candles Timeline */
+    .candles-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+    }
+
+    @media (min-width: 760px) {
+      .candles-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    .candle-card {
+      border-radius: 16px;
+      padding: 0.7rem 0.8rem;
+      background: rgba(7, 9, 32, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.82rem;
+    }
+
+    .candle-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .candle-line {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    /* Rap Block */
+    .rap-block {
+      margin-top: 1.8rem;
+      border-radius: 18px;
+      padding: 1rem 1.1rem;
+      background: linear-gradient(135deg, rgba(255, 95, 109, 0.32), rgba(79, 172, 254, 0.2));
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+      font-size: 0.98rem;
+    }
+
+    .rap-title {
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .rap-line {
+      margin-bottom: 0.15rem;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.82rem;
+      color: var(--text-soft);
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 760px) {
+      .footer-grid {
+        grid-template-columns: 2.5fr 1.5fr;
+      }
+    }
+
+    .footer-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .hashtags {
+      margin-top: 0.4rem;
+      font-size: 0.78rem;
+    }
+
+    .pasuk {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .middot {
+      margin-top: 0.2rem;
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="top-line">
+        <div class="chip">🕎 LightRise (LR) • Hanukkah SparKing Edition</div>
+        <div class="brand-mark">AnLoMinus • SparKing • Leon Yaakobov</div>
+      </div>
+      <div class="hero">
+        <div>
+          <h1 class="hero-main-title">
+            חנוכה באור גבוה – <span>LightRise</span> SparKing Edition
+          </h1>
+          <p class="hero-subtitle">
+            אלבום חנוכה קוסמי בסגנון Afro–Electro–Trap & Holy Energy. שמונה נרות, שמונה טראקים –
+            כל לילה שכבת אור חדשה, מהלב של AnLoMinus אל המציאות.
+          </p>
+
+          <div class="hero-tags">
+            <div class="tag-pill">⚡ Electro–Kabbalah Trap</div>
+            <div class="tag-pill">🕯 8 נרות • 8 טראקים</div>
+            <div class="tag-pill">🎧 Suno • GitHub • SparKing</div>
+            <div class="tag-pill">🌌 Cosmic Hip-Hop Vibes</div>
+          </div>
+
+          <div class="hero-buttons">
+            <a class="btn-primary" href="https://github.com/AnLoMinus/LightRise" target="_blank" rel="noopener">
+              🔗 כניסה למאגר LightRise (LR)
+            </a>
+            <a class="btn-ghost" href="#tracks">
+              🎵 מעבר לרשימת הטראקים
+            </a>
+          </div>
+
+          <div class="hero-mini">
+            📅 כ״ד כסלו תשפ״ו | 03.12.2025<br />
+            ⏰ זמן יצירה: 19:59<br />
+            🧱 קוד פרויקט: <strong>LightRise (LR)</strong> – Hanukkah SparKing Album
+          </div>
+        </div>
+
+        <aside class="album-card">
+          <div class="album-label">Official Hanukkah Album • LR</div>
+          <div class="album-title">SparKing LightRise – 8 Flames</div>
+          <div class="album-sub">
+            שמונה רצועות: מהדלקת הניצוץ הראשון ועד הניצוץ הנצחי. אנרגיה של חנוכה,
+            מתורגמת לטראפ קדוש.
+          </div>
+
+          <div class="track-grid-mini">
+            <div class="track-pill">01 • Light Ignition</div>
+            <div class="track-pill">02 • Golden Flame Pulse</div>
+            <div class="track-pill">03 • Maccabee Mode</div>
+            <div class="track-pill">04 • Miracle Flow</div>
+            <div class="track-pill">05 • Holy Rise Anthem</div>
+            <div class="track-pill">06 • Eight Gates of Fire</div>
+            <div class="track-pill">07 • LightBreaker Royal</div>
+            <div class="track-pill">08 • Eternal Spark</div>
+          </div>
+
+          <div class="album-meta">
+            <span>🎚 BPM Range: 105–115</span>
+            <span>🎼 Style: Afro–Electro–Trap, Holy Energy</span>
+            <span>📀 Brand: AnLoMinus – SparKing</span>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2 class="section-title">
+        <span class="icon">🕯️</span>
+        על האלבום – מה זה LightRise?
+      </h2>
+      <p class="section-subtitle">
+        LightRise הוא מאגר חנוכה רשמי: אלבום, רעיון, אנרגיה. כל נר מקבל טראק, כל טראק מקבל
+        תדר, וכל תדר הופך לכלי עבודה לנשמה. המטרה: להדליק את הניצוץ הפנימי, גם כשכבר
+        כבו הנרות על החנוכייה.
+      </p>
+    </section>
+
+    <section id="tracks">
+      <h2 class="section-title">
+        <span class="icon">🎧</span>
+        רשימת הטראקים – 8 נרות של סאונד
+      </h2>
+      <p class="section-subtitle">
+        כל טראק בנוי כ"שער": סטייל, תדר, רעיון מרכזי. אפשר לחבר לכל אחד קובץ Suno, קלף
+        גרפי או דף לימוד.
+      </p>
+
+      <div class="tracks-grid">
+        <!-- 1 -->
+        <article class="track-card">
+          <div class="track-index">נר 1 • Track 01</div>
+          <div class="track-name">Light Ignition – הדלקת הניצוץ הראשון</div>
+          <div class="track-tagline">
+            הרגע שבו האור נדלק בפנים, לפני שרואים משהו בחוץ.
+          </div>
+          <div class="track-meta">
+            <span class="badge">⚡ Afro–Electro–Trap</span>
+            <span class="badge">🕯 ניצוץ ראשוני</span>
+            <span class="badge">🎚 ~108 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Light Ignition</span>
+            <span class="track-link">📜 Lyrics – Verse & Chorus</span>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="track-card">
+          <div class="track-index">נר 2 • Track 02</div>
+          <div class="track-name">Golden Flame Pulse – פעימת הזהב</div>
+          <div class="track-tagline">
+            דופק הזהב של הלב – שמן שלא נגמר, אמונה שלא נופלת.
+          </div>
+          <div class="track-meta">
+            <span class="badge">✨ Mystic Trap</span>
+            <span class="badge">💛 יציבות פנימית</span>
+            <span class="badge">🎚 ~108 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Golden Flame Pulse</span>
+            <span class="track-link">📜 Mood Notes</span>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="track-card">
+          <div class="track-index">נר 3 • Track 03</div>
+          <div class="track-name">Maccabee Mode – מצב מכבי</div>
+          <div class="track-tagline">
+            מוד לוחם: מעטים מול רבים, ניצחון על הפחדים והספקות.
+          </div>
+          <div class="track-meta">
+            <span class="badge">🔥 Battle Trap</span>
+            <span class="badge">🛡 גבורה ונחישות</span>
+            <span class="badge">🎚 ~110 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Maccabee Mode</span>
+            <span class="track-link">📜 Battle Bars</span>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="track-card">
+          <div class="track-index">נר 4 • Track 04</div>
+          <div class="track-name">Miracle Flow – זרימת הנס</div>
+          <div class="track-tagline">
+            נס שנבנה מהתמדה – לא "פוקס", אלא זרימה עקבית של אור.
+          </div>
+          <div class="track-meta">
+            <span class="badge">🌊 ChillTrap Spiritual</span>
+            <span class="badge">💫 רוך והארה</span>
+            <span class="badge">🎚 ~105 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Miracle Flow</span>
+            <span class="track-link">📜 Reflection Notes</span>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="track-card">
+          <div class="track-index">נר 5 • Track 05</div>
+          <div class="track-name">Holy Rise Anthem – המנון העלייה הקדושה</div>
+          <div class="track-tagline">
+            המנון לב פתוח – כשהלב עולה מדרגה, כל הגוף עוקב אחריו.
+          </div>
+          <div class="track-meta">
+            <span class="badge">🎙 Cosmic Hip-Hop Choir</span>
+            <span class="badge">❤️ פתיחת לב</span>
+            <span class="badge">🎚 ~112 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Holy Rise Anthem</span>
+            <span class="track-link">📜 Hook Ideas</span>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="track-card">
+          <div class="track-index">נר 6 • Track 06</div>
+          <div class="track-name">Eight Gates of Fire – שמונת שערי האש</div>
+          <div class="track-tagline">
+            מסע דרך 8 שערים – כל שער, מידת נפש ותדר.
+          </div>
+          <div class="track-meta">
+            <span class="badge">🌀 Ritual Bass</span>
+            <span class="badge">🚪 שערים אנרגטיים</span>
+            <span class="badge">🎚 ~108 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Eight Gates of Fire</span>
+            <span class="track-link">📜 Gate Map</span>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="track-card">
+          <div class="track-index">נר 7 • Track 07</div>
+          <div class="track-name">LightBreaker Royal – שוברי החושך</div>
+          <div class="track-tagline">
+            לשבור חושך לא בהתנגדות – אלא באור חזק יותר.
+          </div>
+          <div class="track-meta">
+            <span class="badge">⚔ Tech–Trap Holy</span>
+            <span class="badge">👑 מלכות אור</span>
+            <span class="badge">🎚 ~114 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – LightBreaker Royal</span>
+            <span class="track-link">📜 Power Bars</span>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="track-card">
+          <div class="track-index">נר 8 • Track 08</div>
+          <div class="track-name">Eternal Spark – הניצוץ הנצחי</div>
+          <div class="track-tagline">
+            מה נשאר אחרי שהנרות כבו? הניצוץ שנשאר בלב.
+          </div>
+          <div class="track-meta">
+            <span class="badge">🏁 Finale Epic Trap</span>
+            <span class="badge">♾ נצח</span>
+            <span class="badge">🎚 ~110 BPM</span>
+          </div>
+          <div class="track-links">
+            <span class="track-link">🎵 Suno Prompt – Eternal Spark</span>
+            <span class="track-link">📜 Closing Prayer</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="candles">
+      <h2 class="section-title">
+        <span class="icon">🔥</span>
+        8 נרות – 8 כוחות נפש
+      </h2>
+      <p class="section-subtitle">
+        אפשר לחבר כל נר למידת נפש, עבודה יומיומית, ולשיר מתוך האלבום. ככה החג הופך
+        לכלי עבודה – לא רק זיכרון היסטורי.
+      </p>
+
+      <div class="candles-grid">
+        <div class="candle-card">
+          <div class="candle-title">נר 1 – Light Ignition</div>
+          <div class="candle-line">כוח: התחלה, אומץ לומר "אני מדליק".</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 2 – Golden Flame Pulse</div>
+          <div class="candle-line">כוח: יציבות, דופק זהב של אמונה.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 3 – Maccabee Mode</div>
+          <div class="candle-line">כוח: גבורה, מעט נגד הרבה.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 4 – Miracle Flow</div>
+          <div class="candle-line">כוח: זרימה, לראות את הנס בתוך היום־יום.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 5 – Holy Rise Anthem</div>
+          <div class="candle-line">כוח: עלייה, להרים את הלב לשלב הבא.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 6 – Eight Gates of Fire</div>
+          <div class="candle-line">כוח: מיפוי, להבין איפה אני בכל שער.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 7 – LightBreaker Royal</div>
+          <div class.candle-line>כוח: שבירת חושך, להכניס אור במקום מלחמה.</div>
+        </div>
+        <div class="candle-card">
+          <div class="candle-title">נר 8 – Eternal Spark</div>
+          <div class="candle-line">כוח: נצח, לשמור ניצוץ גם אחרי החג.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rap">
+      <div class="rap-block">
+        <div class="rap-title">🎤 Hanukkah LightRise – Rap Hook (4 Bars)</div>
+        <p class="rap-line">🔥 LightRise flame and the beat takes flight,</p>
+        <p class="rap-line">⚡ Leon Yaakobov turning darkness to light,</p>
+        <p class="rap-line">🕯 Eight-day spark in a holy insight,</p>
+        <p class="rap-line">🎤 AnLoMinus roaring — Hanukkah in full might.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">קרדיטים ומאגרים</div>
+          <div class="footer-meta">
+            <span>🧩 Concept & Flow: AnLoMinus – SparKing Studio</span>
+            <span>💾 GitHub Repo: <a href="https://github.com/AnLoMinus/LightRise" target="_blank" rel="noopener">LightRise (LR)</a></span>
+            <span>🎧 Music Prompts: <a href="https://github.com/AnLoMinus/MusicForge" target="_blank" rel="noopener">MusicForge</a></span>
+            <span>👑 Brand Core: <a href="https://github.com/AnLoMinus/SparKing" target="_blank" rel="noopener">SparKing Universe</a></span>
+          </div>
+
+          <div class="hashtags">
+            #Hanukkah #LightRise #SparKing #AnLoMinus #LeonYaakobov #HolyTrap #AfroElectro #CosmicHipHop
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">פסוק חנוכה – אור שעולה</div>
+          <div class="pasuk">
+            "קוּמִי אוֹרִי כִּי בָא אוֹרֵךְ וּכְבוֹד ה׳ עָלַיִךְ זָרָח" (ישעיהו ס׳ א׳)
+          </div>
+          <div class="middot">
+            מספר המידות: 4 – תפארת • הוד • נצח • גבורה.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

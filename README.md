@@ -4,6 +4,8 @@
 
 <img width="1024" height="1024" alt="Hanukkiah of Light in Cosmos" src="https://github.com/user-attachments/assets/549d7d0e-9190-43f4-ac05-6b200f2b1e0c" />
 
+<img width="1024" height="1024" alt="Cosmic Menorah_ Fiery LightRise" src="https://github.com/user-attachments/assets/1ba85265-7b01-43fa-b2b5-72cf5404a98a" />
+
 📅 **כ״ד כסלו תשפ״ו | 03.12.2025**
 ⏰ **19:00**
 🖋️ קרדיטים: AnLoMinus Creative Vault | SparKing Studio | Leon Yaakobov

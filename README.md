@@ -1,10 +1,15 @@
 # ✨ חנוכה – אור מתעורר | **LightRise (LR)** ✨
 
+<img width="1024" height="1024" alt="Menorah of Light in Cosmic Dream" src="https://github.com/user-attachments/assets/aaa3d871-5ef1-4865-9978-6725d9c71c54" />
+
+<img width="1024" height="1024" alt="Golden Radiance_ Menorah of Light" src="https://github.com/user-attachments/assets/f5b491e0-9ecb-44ac-9d24-58041d20b8fa" />
+
+<img width="1024" height="1024" alt="Cosmic Menorah_ Fiery LightRise" src="https://github.com/user-attachments/assets/1ba85265-7b01-43fa-b2b5-72cf5404a98a" />
+
 <img width="1024" height="1024" alt="Menorah of Stars and Energy" src="https://github.com/user-attachments/assets/94658b2b-5fe0-40d4-858f-2b7632d247fb" />
 
 <img width="1024" height="1024" alt="Hanukkiah of Light in Cosmos" src="https://github.com/user-attachments/assets/549d7d0e-9190-43f4-ac05-6b200f2b1e0c" />
 
-<img width="1024" height="1024" alt="Cosmic Menorah_ Fiery LightRise" src="https://github.com/user-attachments/assets/1ba85265-7b01-43fa-b2b5-72cf5404a98a" />
 
 📅 **כ״ד כסלו תשפ״ו | 03.12.2025**
 ⏰ **19:00**

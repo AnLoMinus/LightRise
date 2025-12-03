@@ -112,6 +112,32 @@ Leon Yaakobov — shining ultra bright.
 
 ---
 
-אם תרצה —
-🔥 אכין עכשיו **פרומפט SUNO מלא של 1000 תווים** מוכן להדבקה.
-רוצה?
+# 🔥 **Suno Prompt – Hanukkah SparKing Anthem (Full 1000 chars)**
+
+📅 **כ״ד כסלו תשפ״ו | 03.12.2025**
+⏰ **19:20**
+🖋️ AnLoMinus • SparKing Studio • Leon Yaakobov
+-----------------------------------------------
+
+## 🎵 **🔥 פרומפט SUNO מלא – 1000 תווים – מוכן להדבקה**
+
+*(הטקסט מנוסח לדחוס מקסימום חנוכה + SparKing + Holy Trap + אנרגיה)*
+
+**Prompt (1000 chars):**
+Epic Afro–Electro–Trap • Holy Energy • Cosmic Hip-Hop Vibes. Deep sub-bass, electric drums, darbuka fills, glowing synths, angelic pads, ancient-Hebrew whisper FX. Energetic rap + melodic chanting hooks, powerful cadence, cosmic breath. Mood: Hanukkah fire, light breaking darkness, miracle vibe.
+
+Full lyrics:
+“Night falls slow but the sparks wake up, Leon Yaakobov rising with a flame that erupts. One small glow makes the darkness corrupt, but I hit that switch — watch shadows disrupt. Oil in the heart keeps burning for days, holy power moving in cosmic waves. Ancient prayers echo through neon haze, AnLoMinus mode — ascension always.
+
+Light breaks in as the halos climb, eight-day fire in a world of time. Glow so strong it rewrites the line, divine Trap pulse — holy design.
+
+SparKing Hanukkah, flame of the king, miracle rhythm in everything. From the lows to the highs we rise and sing, LightRise energy — miracles ring. Eight bright sparks transforming the night, Ultra Instinct heart glowing pure and bright. Hanukkah fire — we step and ignite.”
+
+Style: 108 BPM, holy trap drums, cosmic pads, violin stabs, choir layers, mystical ambience.
+
+---
+
+## ✨ פסוק לחנוכה
+
+**"בְּךָ חָשַׁכְתִּי נֵרִי"** – תהילים י״ח.
+**מידות:** הוד • תפארת • גבורה — תיקון האור.
